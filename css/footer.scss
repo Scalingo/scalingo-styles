@@ -1,0 +1,135 @@
+$footer-bg-color: #2c3749;
+
+body > footer {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: $footer-bg-color;
+  color: white;
+
+  &.realfooter {
+    a:not(.status-link, .status-icon) {
+      line-height: 180%;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    .col-lg-1-5 {
+      flex: 0 0 20%;
+      max-width: 20%;
+    }
+    .col-lg-4-5 {
+      flex: 0 0 80%;
+      max-width: 80%;
+    }
+  }
+
+  .fa-scalingo-logo-inverse {
+    height: 40px;
+    width: auto;
+  }
+
+  a {
+    color: white;
+
+    &:hover, &:focus {
+      color: white;
+    }
+  }
+
+  .svg-inline--fa {
+    fill: white;
+
+    &.fa-inverse {
+      fill: $footer-bg-color;
+    }
+  }
+
+  .mdc-fab {
+    svg {
+      fill: $footer-bg-color;
+    }
+  }
+
+  &.extra {
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+
+    @extend small;
+
+    background-color: #1d2532;
+  }
+
+  ul {
+    &.list-unstyled {
+      > li {
+        @extend .mb-1;
+      }
+    }
+  }
+
+  strong {
+    font-weight: 600;
+    font-size: 120%;
+    color: white;
+  }
+
+  a:not(.status-link, .status-icon) {
+    color: #d0d1d4;
+    font-weight: 300;
+
+    &:hover, &:focus {
+      color: #d0d1d4;
+    }
+  }
+
+  .like-link {
+    color: #d0d1d4;
+    font-weight: 300;
+    line-height: 180%;
+  }
+
+  .text-bold {
+    font-weight: 600;
+  }
+
+  .text-small {
+    font-size: 85%;
+  }
+
+  .status-icon {
+    &.success {
+      svg {
+        fill: $brand-secondary;
+        filter: drop-shadow(0 0 2px rgba($brand-secondary, 0.5));
+      }
+    }
+
+    &.danger {
+      svg {
+        fill: $material-color-red-500;
+        filter: drop-shadow(0 0 2px rgba($material-color-red-500, 0.5));
+      }
+    }
+
+    &.warning, &.info {
+      svg {
+        fill: $material-color-deep-orange-500;
+        filter: drop-shadow(0 0 2px rgba($material-color-deep-orange-500, 0.5));
+      }
+    }
+  }
+
+  svg.fa-material-heart {
+    fill: $material-color-red-600;
+  }
+
+  svg.fa-flag-europe {
+    fill: $material-color-yellow-500;
+  }
+}
+
+@media print {
+  footer.realfooter {
+    color: black;
+  }
+}

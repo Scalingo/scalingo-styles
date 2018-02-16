@@ -1,0 +1,123 @@
+.mdc-button {
+  &:hover, &:focus {
+    text-decoration: none;
+  }
+  svg {
+    fill: $brand-primary;
+  }
+  &.mdc-fab--big {
+    font-size: 150%;
+    line-height: 150%;
+  }
+  &.mdc-theme--secondary-bg {
+    svg {
+      fill: white;
+    }
+  }
+}
+
+.black-filled-button {
+  @include mdc-button-filled-accessible($material-color-grey-900);
+  svg {
+    fill: white;
+  }
+}
+
+.green-filled-button {
+  @include mdc-button-filled-accessible($brand-secondary);
+  color: white;
+  &:not(.disabled) {
+    color: white;
+  }
+  svg {
+    fill: white;
+  }
+}
+
+.mdc-fab {
+  background-color: white;
+  svg {
+    height: 50%;
+    width: auto;
+    max-width: 50%;
+    position: absolute;
+    top: 26%;
+    left: 26%;
+    fill: $brand-primary;
+  }
+}
+
+.mdc-fab--xs {
+  width: 15px;
+  height: 15px;
+  line-height: 10px;
+  background-color: $material-color-grey-500;
+  color: white;
+}
+
+.mdc-fab--lg {
+  width: 6rem;
+  height: 6rem;
+}
+
+.mdc-fab--xl {
+  width: 8rem;
+  height: 8rem;
+}
+
+.mdc-typography--display1 {
+  font-weight: 500;
+}
+
+.mdc-card {
+  .card-body {
+    padding: 1rem;
+  }
+  .mdc-typography--title {
+    line-height: 1.5rem;
+  }
+}
+
+a {
+  &.mdc-card, &.mdc-card:focus, &.mdc-card:hover {
+    text-decoration: none;
+    p, .name, .date {
+      color: $body-color;
+      text-decoration: none;
+    }
+  }
+}
+
+.mdc-card__media {
+  overflow: hidden;
+  .inner {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.35s ease-in-out;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    &:hover {
+      transform: scale(1.1);
+      overflow: hidden;
+      filter: brightness(80%);
+    }
+  }
+}
+
+.mdc-tab-bar {
+  margin-left: unset;
+}
+
+.mdc-tab {
+  min-width: unset;
+  &:hover, &:focus {
+    text-decoration: none;
+  }
+}
+
+.mdc-tab-bar__indicator {
+  background-color: rgba($brand-primary, .87);
+}

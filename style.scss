@@ -1,0 +1,66 @@
+@import "material-components-web/material-components-web";
+
+@import "@material/theme/color-palette";
+
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+
+@import "bootstrap/scss/reboot";
+@import "bootstrap/scss/grid";
+
+$spacers: (
+  0: 0,
+  1: ($spacer * 0.125),
+  2: ($spacer * 0.25),
+  3: ($spacer * 0.5),
+  4: ($spacer * 0.75),
+  5: ($spacer * 1.5)
+);
+
+@import "bootstrap/scss/utilities/display";
+@import "bootstrap/scss/utilities/flex";
+@import "bootstrap/scss/utilities/spacing";
+
+$brand-primary: #45b0e6;
+$brand-secondary: #8ec549;
+$body-bg: #fafafa;
+$body-color: #212529;
+
+$main-gradient: linear-gradient(45deg, #2066ab, #328bc7, #45b0e6) right top/100% 100% no-repeat #2066ab
+
+:root {
+  --mdc-theme-primary: $brand-primary;
+  --mdc-theme-secondary: $brand-secondary;
+}
+
+a {
+  color: $brand-primary;
+  &:hover, &:focus {
+    color: darken($brand-primary, 15%);
+  }
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+svg {
+  display: inline-block;
+  font-size: inherit;
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+  width: 1em;
+}
+
+.scalingo-gradient {
+  background: $main-gradient;
+}
+
+@import "css/header";
+@import "css/footer";
+@import "css/page-content";
+@import "css/syntax-highlighting";
+@import "css/mdc-extensions";
+@import "css/bootstrap-like-utilities";
+@import "css/table";

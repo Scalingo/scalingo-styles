@@ -1,0 +1,20 @@
+{
+  "name": "scalingo-styles",
+  "version": "0.1.0",
+  "description": "Scalingo styles (CSS and JS files)",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Scalingo/scalingo-styles.git"
+  },
+  "author": "Yann Klis (Scalingo)",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/Scalingo/scalingo-styles/issues"
+  },
+  "homepage": "https://github.com/Scalingo/scalingo-styles#readme",
+  "dependencies" : {
+    "material-components-web": "~0.30.0",
+    "bootstrap": "^4.0.0"
+  }
+}
