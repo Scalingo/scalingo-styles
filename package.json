@@ -15,6 +15,7 @@
   "homepage": "https://github.com/Scalingo/scalingo-styles#readme",
   "dependencies" : {
     "material-components-web": "~0.30.0",
-    "bootstrap": "^4.0.0"
+    "bootstrap": "^4.0.0",
+    "whatwg-fetch": "^2.0.3"
   }
 }
