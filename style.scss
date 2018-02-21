@@ -1,3 +1,8 @@
+$brand-primary: #45b0e6;
+$brand-secondary: #8ec549;
+$body-bg: #fafafa;
+$body-color: #212529;
+
 @import "material-components-web/material-components-web";
 
 @import "@material/theme/color-palette";
@@ -21,11 +26,6 @@ $spacers: (
 @import "bootstrap/scss/utilities/display";
 @import "bootstrap/scss/utilities/flex";
 @import "bootstrap/scss/utilities/spacing";
-
-$brand-primary: #45b0e6;
-$brand-secondary: #8ec549;
-$body-bg: #fafafa;
-$body-color: #212529;
 
 $main-gradient: linear-gradient(45deg, #2066ab, #328bc7, #45b0e6) right top/100% 100% no-repeat #2066ab
 
