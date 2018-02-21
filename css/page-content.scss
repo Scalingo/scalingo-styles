@@ -1,31 +1,24 @@
-$code-color: $material-color-pink-700;
-$code-bg: rgba($material-color-pink-100, 0.2);
+$code-color: #37474f;
+$code-bg: #f7f7f7;
 .page-content {
   h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     margin-bottom: 0.75rem;
     line-height: 1.1;
   }
 
-  ul.meta li {
-    display: inline-flex;
-    vertical-align: baseline;
-
-    &:nth-child(2) {
-      vertical-align: super;
-    }
+  code {
+    font: 500 90%/1 Roboto Mono, monospace;
   }
 
-  code, pre {
-    font-family: Inconsolata, monospace;
-    hyphens: none;
-  }
-
-  > code {
-    font-size: inherit;
+  pre {
+    margin: 16px 0;
+    overflow-x: auto;
+    padding: 8px;
     color: $code-color;
     background-color: $code-bg;
-    padding: 0.1rem 0.25rem;
-    border-radius: 2px;
+    code {
+      font: 14px/20px Roboto Mono, monospace;
+    }
   }
 
   p, li, a {
@@ -33,24 +26,12 @@ $code-bg: rgba($material-color-pink-100, 0.2);
       font-size: inherit;
       color: $code-color;
       background-color: $code-bg;
-      padding: 0.1rem 0.25rem;
-      border-radius: 2px;
+      padding: 1px 4px;
     }
   }
 
   a > code {
     text-decoration: none;
-  }
-
-  div.highlighter-rouge {
-    @extend .mdc-card, .mb-4;
-    pre {
-      @extend .card-body;
-      margin-bottom: 0;
-      code {
-        font-family: Inconsolata, monospace;
-      }
-    }
   }
 
   .gist-data {
@@ -87,69 +68,6 @@ $code-bg: rgba($material-color-pink-100, 0.2);
     }
   }
 
-  .share-button {
-    display: inline-block;
-
-    &.share-facebook {
-      overflow: hidden;
-      width: 140px;
-      height: 20px;
-    }
-  }
-
-  .tags {
-    display: flex;
-    float: none !important;
-    align-self: flex-start;
-  }
-
-  > footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    font-size: 14px;
-
-    ul {
-      text-transform: none;
-      line-height: 24px;
-    }
-
-    line-height: 0;
-  }
-
-  ul.tags {
-    margin-top: 0;
-    padding-left: 0;
-    text-transform: none;
-
-    li {
-      color: #bbbbbb;
-      display: inline;
-      list-style: outside none none;
-
-      &:after {
-        content: " ";
-        margin-right: 6px;
-      }
-
-      a {
-        text-decoration: none;
-        color: #bbbbbb;
-      }
-
-      &:last-child {
-        &:after {
-          content: "";
-        }
-      }
-    }
-  }
-
-  ul.tags, .share-button {
-    margin-top: 1rem;
-    margin-bottom: 3rem;
-  }
-
   a:hover {
     text-decoration: underline;
   }
@@ -158,11 +76,6 @@ $code-bg: rgba($material-color-pink-100, 0.2);
     vertical-align: middle;
     max-width: 100%;
     border: 0 none;
-  }
-
-  h4.results {
-    margin-top: 0;
-    margin-bottom: 0;
   }
 
   blockquote {
@@ -195,7 +108,7 @@ $code-bg: rgba($material-color-pink-100, 0.2);
 
       display: block;
       font-size: 80%;
-      color: #6c757d;
+      color: $material-color-grey-600;
     }
   }
 }
