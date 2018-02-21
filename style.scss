@@ -64,3 +64,11 @@ svg {
 @import "css/mdc-extensions";
 @import "css/bootstrap-like-utilities";
 @import "css/table";
+
+hr {
+  border: 0;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: $material-color-grey-600;
+  @extend .my-3;
+}
