@@ -1,7 +1,18 @@
 aside {
-  &.note {
+  &.note, .warning {
     margin: 16px 0;
     padding: 12px 24px 12px 60px;
+    a {
+      color: inherit;
+      font-weight: bold;
+    }
+    > p {
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &.note {
     background-color: $material-color-light-blue-50;
     color: $material-color-light-blue-700;
     &:before {
@@ -16,8 +27,6 @@ aside {
     }
   }
   &.warning {
-    margin: 16px 0;
-    padding: 12px 24px 12px 60px;
     background-color: $material-color-deep-orange-50;
     color: $material-color-red-a700;
     &:before {
