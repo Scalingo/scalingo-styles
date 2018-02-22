@@ -1,6 +1,6 @@
 {
   "name": "scalingo-styles",
-  "version": "0.2.9",
+  "version": "0.2.10",
   "description": "Scalingo styles (CSS and JS files)",
   "main": "index.js",
   "repository": {
