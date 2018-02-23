@@ -1,19 +1,23 @@
 .highlight {
-  .c {
+  .c, .c1, .c2 {
     color: $material-color-pink-600;
   }
 
-  .k {
+  .k, .kd, .kp, .nt {
     color: $material-color-blue-600;
   }
 
-  .s2 {
+  .n, .na, .kt {
+    color: $material-color-purple-500;
+  }
+
+  .s, .s1, .s2, .ss {
     color: $material-color-green-600;
   }
 
-  // .atn {
-  //   color: $material-color-purple-500;
-  // }
+  .mi {
+    color: $material-color-red-800;
+  }
 }
 
 /* Comment */
