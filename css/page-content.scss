@@ -6,6 +6,10 @@ $code-bg: $material-color-blue-grey-50;
     line-height: 1.1;
   }
 
+  h2, h3, h4, h5, h6, .h2, .h3, .h4, .h5, .h6 {
+    margin-top: 1.5rem;
+  }
+
   code {
     font: 500 90%/1 Roboto Mono, monospace;
   }
