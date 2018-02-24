@@ -46,6 +46,9 @@ a {
   &:hover {
     text-decoration: underline;
   }
+  &:active, &:hover {
+    outline: 0;
+  }
 }
 
 svg {
