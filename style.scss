@@ -46,7 +46,7 @@ a {
   &:hover {
     text-decoration: underline;
   }
-  &:active, &:hover {
+  &:active, &:hover, &:focus {
     outline: 0;
   }
 }
