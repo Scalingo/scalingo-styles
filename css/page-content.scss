@@ -31,6 +31,7 @@ $code-bg: $material-color-blue-grey-50;
       color: $code-color;
       background-color: $code-bg;
       padding: 1px 4px;
+      word-wrap: break-word;
     }
   }
 
