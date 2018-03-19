@@ -5,8 +5,15 @@
 }
 
 .scalingo-toolbar--custom {
-  background-color: white;
+  background: $main-gradient;
   color: inherit;
+  .supnav {
+    width: 100%;
+    background-color: white;
+    padding-top: unset;
+    padding-bottom: unset;
+    z-index: 10;
+  }
   .brand {
     svg {
       width: auto;
@@ -84,6 +91,10 @@
 
 @media (max-width: 599px) {
   .scalingo-toolbar--custom {
+    .supnav {
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
     .brand {
       padding-top: 0;
       padding-bottom: 0;
