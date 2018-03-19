@@ -26,7 +26,7 @@ body > footer {
   .scalingo-logo-inverse {
     height: 40px;
     width: auto;
-    fill:white;
+    fill: white;
   }
 
   a {
@@ -39,10 +39,6 @@ body > footer {
 
   .svg-inline--fa {
     fill: white;
-
-    &.fa-inverse {
-      fill: $footer-bg-color;
-    }
   }
 
   .mdc-fab {
@@ -120,12 +116,14 @@ body > footer {
     }
   }
 
-  svg.fa-material-heart {
-    fill: $material-color-red-600;
+  .fa-magic-wand {
+    height: auto;
   }
 
-  svg.fa-flag-europe {
-    fill: $material-color-yellow-500;
+  .fa-flag-europe {
+    height: auto;
+    width: 1.65em;
+    vertical-align: -0.45em;
   }
 }
 
