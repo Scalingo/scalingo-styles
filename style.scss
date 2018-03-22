@@ -65,13 +65,14 @@ svg {
 }
 
 @import "css/header";
-@import "css/footer";
 @import "css/page-content";
 @import "css/syntax-highlighting";
 @import "css/mdc-extensions";
 @import "css/bootstrap-like-utilities";
 @import "css/table";
 @import "css/aside";
+@import "css/drawer";
+@import "css/footer";
 
 hr {
   border: 0;
