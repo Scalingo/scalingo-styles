@@ -110,8 +110,8 @@ body > footer {
 
     &.warning, &.info {
       svg {
-        fill: $material-color-deep-orange-500;
-        filter: drop-shadow(0 0 2px rgba($material-color-deep-orange-500, 0.5));
+        fill: $material-color-orange-300;
+        filter: drop-shadow(0 0 2px rgba($material-color-orange-300, 0.5));
       }
     }
   }
