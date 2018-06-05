@@ -104,3 +104,17 @@
     }
   }
 }
+
+@media (min-width: 768px) and (max-width: 992px) {
+
+  .scalingo-toolbar--custom {
+    .scalingo-custom-title {
+      &:not(.mdc-button) {
+        padding: 0 16px;
+      }
+    }
+    .mdc-toolbar__menu-icon + .mdc-toolbar__title {
+      margin-left: 16px;
+    }
+  }
+}
