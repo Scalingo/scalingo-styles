@@ -1,8 +1,8 @@
 $footer-bg-color: #2c3749;
 
 body > footer {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 20px;
+  padding-bottom: 20px;
   background-color: $footer-bg-color;
   color: white;
 
@@ -49,8 +49,8 @@ body > footer {
   }
 
   &.extra {
-    padding-top: 0.8em;
-    padding-bottom: 0.8em;
+    padding-top: 20px;
+    padding-bottom: 20px;
 
     @extend small;
 
@@ -131,5 +131,12 @@ body > footer {
 @media print {
   footer.realfooter {
     color: black;
+  }
+}
+
+@media (min-width: 768px) {
+  body > footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
