@@ -13,6 +13,18 @@
     padding-top: unset;
     padding-bottom: unset;
     z-index: 10;
+    .container {
+      > .flex-row:first-child {
+        .scalingo-custom-title {
+          &:not(.mdc-button) {
+            &:hover {
+              color: rgba(0,0,0,.87);
+              border-bottom-color: $brand-primary;
+            }
+          }
+        }
+      }
+    }
   }
   .brand {
     svg {
@@ -51,7 +63,7 @@
         color: rgba(0,0,0,.87);
         text-decoration: none;
       }
-      &.active, &:hover {
+      &.active {
         color: rgba(0,0,0,.87);
         border-bottom-color: $brand-primary;
       }
