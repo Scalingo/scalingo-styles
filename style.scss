@@ -7,6 +7,11 @@ $brand-secondary-dark: #5c9313;
 $body-bg: #fafafa;
 $body-color: #212529;
 
+$mdc-theme-primary: $brand-primary;
+$mdc-theme-secondary: $brand-secondary;
+$mdc-theme-on-primary: #442b2d;
+$mdc-theme-on-secondary: #442b2d;
+
 @import "material-components-web/material-components-web";
 
 @import "@material/theme/color-palette";
@@ -32,11 +37,6 @@ $spacers: (
 @import "bootstrap/scss/utilities/spacing";
 
 $main-gradient: linear-gradient(45deg, #2066ab, #328bc7, #45b0e6) right top/100% 100% no-repeat #2066ab
-
-:root {
-  --mdc-theme-primary: $brand-primary;
-  --mdc-theme-secondary: $brand-secondary;
-}
 
 a {
   color: $brand-primary;

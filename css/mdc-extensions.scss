@@ -2,9 +2,6 @@
   &:hover, &:focus {
     text-decoration: none;
   }
-  svg {
-    fill: $brand-primary;
-  }
   &.mdc-fab--big {
     font-size: 150%;
     line-height: 150%;
@@ -16,22 +13,8 @@
   }
 }
 
-.black-filled-button {
+.mdc-theme--black-bg {
   @include mdc-button-filled-accessible($material-color-grey-900);
-  svg {
-    fill: white;
-  }
-}
-
-.green-filled-button {
-  @include mdc-button-filled-accessible($brand-secondary);
-  color: white;
-  &:not(.disabled) {
-    color: white;
-  }
-  svg {
-    fill: white;
-  }
 }
 
 .mdc-fab {
@@ -65,15 +48,11 @@
   height: 8rem;
 }
 
-.mdc-typography--display1 {
-  font-weight: 500;
-}
-
 .mdc-card {
   .card-body {
     padding: 1rem;
   }
-  .mdc-typography--title {
+  .mdc-typography--headline6 {
     line-height: 1.5rem;
   }
 }
@@ -105,19 +84,4 @@ a {
       filter: brightness(80%);
     }
   }
-}
-
-.mdc-tab-bar {
-  margin-left: unset;
-}
-
-.mdc-tab {
-  min-width: unset;
-  &:hover, &:focus {
-    text-decoration: none;
-  }
-}
-
-.mdc-tab-bar__indicator {
-  background-color: rgba($brand-primary, .87);
 }
