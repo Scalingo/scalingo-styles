@@ -36,7 +36,7 @@ $spacers: (
 @import "bootstrap/scss/utilities/flex";
 @import "bootstrap/scss/utilities/spacing";
 
-$main-gradient: linear-gradient(45deg, #2066ab, #328bc7, #45b0e6) right top/100% 100% no-repeat #2066ab
+$main-gradient: linear-gradient(45deg, #2066ab, #328bc7, #45b0e6) right top/100% 100% no-repeat #2066ab;
 
 a {
   color: $brand-primary;
