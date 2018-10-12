@@ -1,8 +1,9 @@
-import {MDCTemporaryDrawer} from '@material/drawer'
-
-let drawerNode = document.querySelector('.mdc-drawer--temporary')
-let drawerOpener = document.querySelector('.drawer-opener')
-if (drawerNode !== null && drawerOpener !== null) {
-  const drawer = new MDCTemporaryDrawer(drawerNode)
-  drawerOpener.addEventListener('click', () => drawer.open = true)
+import {MDCTopAppBar} from "@material/top-app-bar"
+const topAppBarNode = document.getElementById('app-bar')
+if (topAppBarNode !== null) {
+  const topAppBar = MDCTopAppBar.attachTo(topAppBarNode)
+  topAppBar.setScrollTarget(document.getElementById('main-content'))
+  topAppBar.listen('MDCTopAppBar:nav', () => {
+    drawer.open = !drawer.open
+  })
 }
