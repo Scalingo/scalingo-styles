@@ -1,5 +1,5 @@
 @include media-breakpoint-down(md) {
-  .mdc-toolbar__section + .mdc-toolbar__section {
+  .mdc-top-app-bar__section + .mdc-top-app-bar__section {
     display: none;
   }
 }
@@ -7,12 +7,16 @@
 .scalingo-toolbar--custom {
   background: $main-gradient;
   color: inherit;
+  .mdc-top-app-bar__action-item, .mdc-top-app-bar__navigation-icon {
+    color: black;
+  }
   .supnav {
     width: 100%;
     background-color: white;
     padding-top: unset;
     padding-bottom: unset;
     z-index: 10;
+    height: 64px;
     .container {
       > .flex-row:first-child {
         .scalingo-custom-title {
@@ -24,11 +28,6 @@
           }
         }
       }
-    }
-  }
-  .brand {
-    svg {
-      width: auto;
     }
   }
   .mdc-button {
@@ -69,8 +68,13 @@
       }
     }
   }
-  .mdc-toolbar__menu-icon + .mdc-toolbar__title {
-    margin-left: 16px;
+  .brand {
+    svg {
+      width: auto;
+    }
+    + .scalingo-custom-title {
+      margin-left: 16px;
+    }
   }
 }
 
@@ -124,7 +128,7 @@
         padding: 0 16px;
       }
     }
-    .mdc-toolbar__menu-icon + .mdc-toolbar__title {
+    .mdc-top-app-bar__menu-icon + .mdc-top-app-bar__title {
       margin-left: 16px;
     }
   }

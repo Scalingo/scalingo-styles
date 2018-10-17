@@ -7,14 +7,20 @@
     line-height: 150%;
   }
   &.mdc-theme--secondary-bg {
-    svg {
-      fill: white;
-    }
+    color: white
   }
+}
+
+.mdc-theme--secondary-bg {
+  @include mdc-button-filled-accessible($mdc-theme-secondary);
 }
 
 .mdc-theme--black-bg {
   @include mdc-button-filled-accessible($material-color-grey-900);
+}
+
+.mdc-theme--white-bg {
+  @include mdc-button-filled-accessible(#fff);
 }
 
 .mdc-fab {
@@ -41,11 +47,13 @@
 .mdc-fab--lg {
   width: 6rem;
   height: 6rem;
+  border-radius: 3rem;
 }
 
 .mdc-fab--xl {
   width: 8rem;
   height: 8rem;
+  border-radius: 4rem;
 }
 
 .mdc-card {

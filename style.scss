@@ -1,16 +1,10 @@
-$brand-primary: #45b0e6;
-$brand-primary-light: #81e2ff;
-$brand-primary-dark: #0081b4;
-$brand-secondary: #8ec549;
-$brand-secondary-light: #c0f778;
-$brand-secondary-dark: #5c9313;
+$brand-primary: #1d9ada;
+$brand-secondary: darken(#00AB4F, 1%);
 $body-bg: #fafafa;
-$body-color: #212529;
+$body-color: #212121;
 
 $mdc-theme-primary: $brand-primary;
 $mdc-theme-secondary: $brand-secondary;
-$mdc-theme-on-primary: #442b2d;
-$mdc-theme-on-secondary: #442b2d;
 
 @import "material-components-web/material-components-web";
 
@@ -51,6 +45,14 @@ a {
   }
 }
 
+.text-primary {
+  color: $brand-primary;
+}
+
+.text-secondary {
+  color: $brand-secondary;
+}
+
 svg {
   display: inline-block;
   font-size: inherit;
@@ -58,6 +60,7 @@ svg {
   overflow: visible;
   vertical-align: -0.125em;
   width: 1em;
+  fill: currentColor;
 }
 
 .scalingo-gradient {
