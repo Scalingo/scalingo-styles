@@ -54,8 +54,6 @@
       text-transform: none;
       border-bottom: 2px solid transparent;
       border-top: 2px solid transparent;
-      padding: 0 16px;
-      margin-left: 0;
       transition: color .2s;
       letter-spacing: unset;
       &:hover, &:focus {
@@ -64,16 +62,12 @@
       }
       &.active {
         color: rgba(0,0,0,.87);
-        border-bottom-color: $brand-primary;
       }
     }
   }
   .brand {
     svg {
       width: auto;
-    }
-    + .scalingo-custom-title {
-      margin-left: 16px;
     }
   }
 }
@@ -91,6 +85,17 @@
         height: 24px;
       }
     }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .scalingo-custom-title {
+    &:not(.mdc-button) {
+      padding: 0 0;
+    }
+  }
+  .scalingo-custom-title {
+    margin-left: 20px;
   }
 }
 
@@ -125,11 +130,8 @@
   .scalingo-toolbar--custom {
     .scalingo-custom-title {
       &:not(.mdc-button) {
-        padding: 0 16px;
+        padding: 0 0;
       }
-    }
-    .mdc-top-app-bar__menu-icon + .mdc-top-app-bar__title {
-      margin-left: 16px;
     }
   }
 }
