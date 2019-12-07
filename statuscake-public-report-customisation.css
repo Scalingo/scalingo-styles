@@ -1,0 +1,103 @@
+html {
+  font-size: unset;
+  line-height: 1.15;
+}
+
+body {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212121;
+}
+
+a {
+  color: #1d9ada;
+}
+
+a:focus, a:hover {
+  color: #146a96;
+}
+
+#header h1 {
+  padding: 4px 0;
+}
+
+#content-header {
+  box-shadow: 0 2px 4px -1px rgba(0,0,0,.2),0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12);
+  border-bottom: 0;
+  border-radius: 0;
+  margin-bottom: 40px;
+}
+
+#content-header img {
+  object-position: -99999px 99999px;
+  background-image: url('https://cdn.scalingo.com/logo.svg');
+  background-repeat: no-repeat;
+  height: 32px;
+}
+
+.Box {
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0 2px 1px -1px rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 1px 3px 0 rgba(0,0,0,.12);
+}
+
+.Title {
+  border-bottom: 1px solid rgba(0,0,0,.12);
+  height: 56px;
+  display: flex;
+  justify-content: center !important;
+  flex-direction: column !important;
+}
+
+.Title h1 {
+  font-size: .875rem;
+  line-height: 1.375rem;
+  font-weight: 700;
+  letter-spacing: .00714em;
+  padding: 0 16px;
+}
+
+.table > thead > tr, .table > tbody > tr {
+  height: 56px;
+}
+
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th {
+  font-size: .875rem;
+  line-height: 1.375rem;
+  font-weight: 700;
+  letter-spacing: .00714em;
+  padding: 0 16px;
+}
+
+.table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+  font-size: .875rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  letter-spacing: .01786em;
+  padding: 0 16px;
+}
+
+.table > thead > tr > th, .table > thead > tr > td, .table > tbody > tr > th, .table > tbody > tr > td, .table > tfoot > tr > th, .table > tfoot > tr > td {
+  border-top: 1px solid rgba(0,0,0,.12);
+}
+
+.table-full thead {
+  background: #fff;
+}
+
+.table-full thead tr > th {
+  border-bottom: 1px solid rgba(0,0,0,.12);
+}
+
+.table-striped > tbody > tr:nth-of-type(2n+1) {
+  background-color: #fff;
+}
+
+.table-striped > tbody > tr {
+  background-color: #fff;
+}
+
+.table > thead > tr > th, .table > thead > tr > td, .table > tbody > tr > th, .table > tbody > tr > td, .table > tfoot > tr > th, .table > tfoot > tr > td {
+  vertical-align: middle;
+}
