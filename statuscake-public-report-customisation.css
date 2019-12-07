@@ -51,8 +51,8 @@ a:focus, a:hover {
 }
 
 .Title h1 {
-  font-size: .875rem;
-  line-height: 1.375rem;
+  font-size: calc(.875rem*1.2);
+  line-height: calc(1.375rem*1.2);
   font-weight: 700;
   letter-spacing: .00714em;
   padding: 0 16px;
@@ -96,6 +96,10 @@ a:focus, a:hover {
 
 .table-striped > tbody > tr {
   background-color: #fff;
+}
+
+.table-striped > tbody > tr:hover {
+  background-color: rgba(0,0,0,.04);
 }
 
 .table > thead > tr > th, .table > thead > tr > td, .table > tbody > tr > th, .table > tbody > tr > td, .table > tfoot > tr > th, .table > tfoot > tr > td {
