@@ -95,21 +95,21 @@ body > footer {
   }
 
   .status-icon {
-    &.success {
+    &.is-success {
       svg {
         fill: $brand-secondary;
         filter: drop-shadow(0 0 2px rgba($brand-secondary, 0.5));
       }
     }
 
-    &.danger {
+    &.is-danger {
       svg {
         fill: $material-color-red-500;
         filter: drop-shadow(0 0 2px rgba($material-color-red-500, 0.5));
       }
     }
 
-    &.warning, &.info {
+    &.is-warning {
       svg {
         fill: $material-color-orange-300;
         filter: drop-shadow(0 0 2px rgba($material-color-orange-300, 0.5));
