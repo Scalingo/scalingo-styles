@@ -1,0 +1,69 @@
+/*
+ * This CSS must be copied to the StatusCake Page "Look & Feel" settings.
+ */
+html {
+  font-size: unset;
+  line-height: 1.15;
+}
+
+body {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212121;
+  background-color: rgb(250, 250, 250);
+}
+
+a {
+  color: #1d9ada;
+}
+
+a:focus, a:hover {
+  color: #146a96;
+}
+
+/* hero is the div containing the Scalingo logo */
+.hero.is-primary .hero-body {
+  padding: 12px;
+}
+
+/* StatusCake imposes a PNG for the logo. We replace it with a pretty SVG. */
+#logo_image img {
+  object-position: -99999px 99999px;
+  background-image: url('https://cdn.scalingo.com/logo.svg');
+  background-repeat: no-repeat;
+  height: 32px;
+}
+
+/* Hide the text title as we only want to display the logo */
+#header-text h1.title {
+  display: none;
+}
+
+/*
+ * The status bar is the div displaying the color of the platform status (green,
+ * orange or red)
+ */
+#status-bar.notification {
+  box-shadow: 0 2px 4px -1px rgba(0,0,0,.2),0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12);
+  border-bottom: 0;
+  border-radius: 0;
+}
+
+.content.box {
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0 2px 1px -1px rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 1px 3px 0 rgba(0,0,0,.12);
+}
+
+/*
+ * The following rules apply for the list of services, when clicking on a
+ * category
+ */
+.singleton-container.opened:first-of-type {
+    padding: 0 !important;
+}
+
+.singleton-container.opened {
+    padding: 15px 0 !important;
+}
