@@ -1,24 +1,12 @@
 const axios = require('axios');
 const util = require('util');
 
-let statusURL = 'https://scalingostatus.com'
-
-// Get div with ID `status-bar` and the classes being `notification` plus:
-// - `is-success`: green
-// - `is-warning`: orange
-// - `is-danger`: red
+const statusURL = 'https://scalingo.com/status'
 
 axios.get(statusURL).then((response) => {
-  const parser = new DOMParser()
-  dom = parser.parseFromString(response.data, 'text/html')
-  const classes = dom.querySelector('div#status-bar.notification').
-    getAttribute('class').split(' ')
-  // status contains a string like "is-success" and we add it as a class of the
-  // status-icon element
-  const status = classes.find(el => el.substring(0, 3) == 'is-')
   let statusIcon = document.querySelector('.status-icon')
-  if (status != null && statusIcon !== null) {
-    statusIcon.classList.add(status)
+  if (statusIcon !== null) {
+    statusIcon.classList.add(response.data.status)
   }
 }).catch((error) => {
   console.log("fetch status error: ", error)
