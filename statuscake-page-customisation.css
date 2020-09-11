@@ -67,3 +67,23 @@ a:focus, a:hover {
 .singleton-container.opened {
     padding: 15px 0 !important;
 }
+
+/* .timeline => Events#show page, .content => Events#index page */
+.timeline li.entry ul li, .content ul li {
+  margin-left: 1em;
+  margin-bottom: 8px;
+}
+
+.timeline li.entry ul li li, .content ul li li {
+  margin-left: 2em;
+}
+
+.timeline h2, .content h2 {
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+}
+
+.timeline h3, .content h3 {
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+}
